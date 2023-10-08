@@ -11,7 +11,7 @@ function App() {
      Does nothing if provided region is not mapped to phone number */
   function updatePhoneNumbers(region) {
     if (region in regionPhoneJSON) {
-      const regionPhoneNumber = regionPhoneJSON[region]
+      const regionPhoneNumber = `${region}: ${regionPhoneJSON[region]}`
     
       let newQueue = new Set(Array.from(phoneNumberQueue));
 

@@ -39,6 +39,10 @@ svg {
   fill: #8ECDDD;
 }
 
+.region_label {
+  fill: white;
+}
+
 #phoneNumberTable {
   width: 50%;
   height: 60vh;
