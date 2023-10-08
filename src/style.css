@@ -11,8 +11,19 @@ body {
   font-family: 'Heebo', Arial, Helvetica, sans-serif;
 }
 
-html, .root, body, main {
+html, #root, body, .App {
   height: 100%;
+}
+
+body {
+  background-color: #FFCC70;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header {
@@ -22,16 +33,12 @@ header {
 }
 
 main {
+  width: 90%;
   display: flex;
   justify-content: center;
   align-items: stretch;
   gap: 16px;
-  margin: 0 32px;
 } 
-
-body {
-  background-color: #FFCC70;
-}
 
 svg {
   width: 50%;
