@@ -18,18 +18,42 @@ html, .root, body, main {
 main {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  gap: 16px;
   margin: 0 32px;
+} 
+
+
+body {
+  background-color: #FFCC70;
+}
+
+svg {
+  width: 50%;
+  height: 60vh;
+  background-color: #FFFADD;
 }
 
 .clicked.region {
-  stroke: black;
-  fill: aqua;
+  stroke: #22668D;
+  fill: #8ECDDD;
 }
 
-#phoneNumbers {
+#phoneNumberTable {
+  width: 50%;
+  height: 60vh;
+  background-color: #FFFADD;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
+
+.phoneNumber {
+  font-size: 16px;
+  padding: 8px;
+  margin: 1px 0;
+  border: #22668D solid;
+}
+

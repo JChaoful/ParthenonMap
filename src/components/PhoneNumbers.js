@@ -1,12 +1,11 @@
 function PhoneNumbers({phoneNumberQueue}){
-
-    const phoneNumbers = Array.from(phoneNumberQueue).map((phoneNumber, index) => 
-        <p key={index}>{phoneNumber}</p>
-    );
-    console.log(phoneNumbers);
+    const phoneNumbers = Array.from(phoneNumberQueue)
+        .map((phoneNumber, index) => 
+            <span class="phoneNumber" key={index}>{phoneNumber}</span>
+        );
 
     return (
-        <div id="phoneNumbers">
+        <div id="phoneNumberTable">
             {phoneNumbers}
         </div>
     );
