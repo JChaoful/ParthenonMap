@@ -41,6 +41,8 @@ svg {
 
 .region_label {
   fill: white;
+  pointer-events: none;
+  user-select: none;
 }
 
 #phoneNumberTable {
