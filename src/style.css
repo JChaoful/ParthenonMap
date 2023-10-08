@@ -11,6 +11,11 @@ body {
   font-family: 'Heebo', Arial, Helvetica, sans-serif;
 }
 
+em {
+  font-weight: bold;
+  font-style: normal;
+}
+
 html, #root, body, .App {
   height: 100%;
 }
@@ -32,30 +37,65 @@ header {
   align-items: center;
 }
 
+h1 {
+  font-size: 32px;
+}
+
+@media(min-width: 1200px) {
+  h1 {
+    font-size: 48px;
+  }
+}
+
 main {
   width: 95%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px
+  gap: 16px
 } 
 
 @media (min-width: 1200px) {
-  main {
-    flex-direction: row;
+  main {  
     width: 90%;
-    align-items: stretch;
-    gap: 16px;
+    gap: 32px;
   } 
 }
 
+#instructions {
+  font-size: 16px;
+}
+
+#phoneNumberDisplay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+@media (min-width: 1200px) {
+  #phoneNumberDisplay {
+    flex-direction: row;
+    align-items: stretch;
+  }
+  
+}
 
 svg {
-  width: 50%;
+  width: 100%;
   height: 60vh;
   background-color: #FFFADD;
 }
+
+@media (min-width: 1200px) {
+  svg {
+    width: 50%;
+    height: 60vh;
+  }
+}
+
 
 .clicked.region {
   stroke: #22668D;
@@ -69,16 +109,22 @@ svg {
   user-select: none;
 }
 
-
 #phoneNumberTable {
-  width: 50%;
-  height: 60vh;
+  width: 100%;
+  height: 40vh;
   background-color: #FFFADD;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 1200px) {
+  #phoneNumberTable {
+    width: 50%;
+    height: 60vh;
+  }
 }
 
 .phoneNumber {
@@ -93,4 +139,5 @@ footer {
   justify-content: center;
   align-items: center;
   margin: 16px 16px 8px;
+  font-size: 10px;
 }
