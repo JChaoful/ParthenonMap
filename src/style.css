@@ -11,6 +11,13 @@ body {
   font-family: 'Heebo', Arial, Helvetica, sans-serif;
 }
 
-html, .root, body, main, .section-container {
+html, .root, body, main {
   height: 100%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 32px;
 }

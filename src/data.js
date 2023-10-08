@@ -1,5 +1,5 @@
 // Phone numbers mapped to each region
-export const numbers = {
+export const regionPhoneNumbers = {
 	"ZBW": "10917959481",
 	"ZOB": "12641292031",
 	"ZLC": "10047930304",
