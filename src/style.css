@@ -15,6 +15,12 @@ html, .root, body, main {
   height: 100%;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 main {
   display: flex;
   justify-content: center;
@@ -22,7 +28,6 @@ main {
   gap: 16px;
   margin: 0 32px;
 } 
-
 
 body {
   background-color: #FFCC70;
@@ -63,3 +68,9 @@ svg {
   border: #22668D solid;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 16px 16px 0;
+}
