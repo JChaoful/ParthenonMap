@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { regionPhoneJSON } from "../data.js"
+import PhoneNumbers from "./PhoneNumbers.js";
 import SVGMap from "./SVGMap";
 
 function App() {
@@ -24,15 +25,11 @@ function App() {
     } 
   }
 
-  const phoneNumbers = Array.from(phoneNumberQueue).map((phoneNumber, index) => 
-    <p key={index}>{phoneNumber}</p>
-  );
-
   return (
     <div className="App">
       <main>
         <SVGMap updatePhoneNumbers = {updatePhoneNumbers}/>
-        {phoneNumbers}
+        <PhoneNumbers phoneNumberQueue={phoneNumberQueue}/>
       </main>
       
     </div>
