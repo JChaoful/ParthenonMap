@@ -1,3 +1,4 @@
+// Map of regions associated with phone numbers
 function SVGMap() {
     return (
         <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" xmlnsInkscape="http://www.inkscape.org/namespaces/inkscape" xmlnsSodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlnsSvg="http://www.w3.org/2000/svg" id="map" version="1.1" x="0px" y="0px" viewBox="36 8 870 500" xmlSpace="preserve" height="100%" width="100%">
