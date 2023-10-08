@@ -58,7 +58,7 @@ main {
 
 @media (min-width: 1200px) {
   main {  
-    width: 90%;
+    width: 100%;
     gap: 32px;
   } 
 }
@@ -92,7 +92,7 @@ svg {
 @media (min-width: 1200px) {
   svg {
     width: 50%;
-    height: 60vh;
+    height: 70vh;
   }
 }
 
@@ -123,7 +123,7 @@ svg {
 @media (min-width: 1200px) {
   #phoneNumberTable {
     width: 50%;
-    height: 60vh;
+    height: 70vh;
   }
 }
 
@@ -135,9 +135,16 @@ svg {
 }
 
 footer {
+  width:80%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 16px 16px 8px;
   font-size: 10px;
+}
+
+@media (min-width: 1200px) {
+  footer {
+    width: 50%;
+  }
 }
